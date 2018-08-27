@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>众筹电影购票页面</title>
+    <!--引入css 需要用这个标签-->
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/index.css">
+    
+    <!--核心js 文件.-->
+    <script src="jquery/jquery.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/web3.js"></script>
+    <script src="js/crowd-abi.js"></script>
+    <script src="js/mvc-abi.js"></script>
+    <script src="js/index.js"></script>
+    
+
+</head>
+<body>
+<!--弹出窗口部分-->
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">请登录!</h4>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="addressId">账户地址</label>
+                    <input type="email" class="form-control" id="addressId" placeholder="请输入账户地址">
+                </div>
+			</div>
+			
+	
+
+            <div class="modal-footer">
+                <button type="button" class="close_win btn btn-default" data-dismiss="modal">取消</button>
+                <button type="button" class="Login btn btn-primary">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-msg">
+    <div class="movie">
+        <div>
+            <img src="./images/timg.jpeg" alt="some_text">
+            <div class='btn-margin'>
+                <button type="button" class="Buy btn btn-danger">买票</button>
+            </div>
+        </div>
+        
+        <ul class="layout">
+
+            <li class="MovieName">
+                <span>电影名称:狂潮影品</span>
+                <span></span>
+            </li>
+            
+            <li class="MoviePrice">
+                <span>电影票价:0.02ETH</span>
+                <span></span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+</body>
+</html>

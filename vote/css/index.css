@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*
+.container-msg{
+
+}
+*/
+.movie{
+    width: 80%;
+    margin:50px auto 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.movie img{
+    width: 500px;
+    height: 500px;
+}
+.movie .btn-margin{
+    text-align: center;
+    margin-top: 20px;
+}
+.weiclass{
+    width: 80px;
+    display: inline-block;
+}
+
+.layout{
+    width: 80%;
+    margin: 40px auto;
+    text-align: center;
+}
+.layout li{
+    font-size: 40px;
+    margin-top: 30px;
+}
