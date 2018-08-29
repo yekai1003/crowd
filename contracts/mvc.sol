@@ -76,7 +76,9 @@ contract mvcCrowd {
     //获得众筹信息
     function crowInfo(address _owner) constant returns (uint amount, uint crowdTime) {
         uint id = userID[_owner];
-        addr = info[id].addr;
+        if(id == 0 && msg.sender != owner) {
+            return (0,0);
+        }
         amount = info[id].amount;
         crowdTime = info[id].crowdTime;
         emit CrowInfo(_owner, amount, id);
